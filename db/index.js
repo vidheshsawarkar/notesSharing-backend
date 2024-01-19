@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('your-mongodb-instance/notesSharingApp');
+mongoose.connect('mongodb://mongodb/notesSharingApp');
 
 const UserSchema = new mongoose.Schema({
     username: String,

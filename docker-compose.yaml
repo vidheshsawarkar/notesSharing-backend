@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+  notes-sharing-app:
+    image: vidheshsawarkar/notes-sharing-app:latest
+    ports:
+      - "3000:3000"
+
+volumes:
+  mongodb-data:
